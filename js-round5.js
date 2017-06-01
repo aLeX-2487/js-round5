@@ -12,7 +12,8 @@ $(document).ready(function() {
             data: {"name": name, "pwd": password},  //是一个对象，连同请求发送到服务器的数据
             dataType: "json",  //一般采用json
             success: function (data) {  //方法，请求成功后的回调函数
-                alert(data.message);   //data.messag为服务器接口返回信息
+                $(".tip-2").html(data.message);   //data.messag为服务器接口返回信息
+                $(".tip-2").css({"text-align":"center","font-size":"2rem"});
             }
         })
     })
@@ -26,6 +27,7 @@ $(document).ready(function() {
     $("input[name='password']").change(function () {
         if($("input[name='password']").val().length<6||$("input[name='password']").val().length>12){
             $(".tip-2").html("请输入6-12位密码");
+            $(".tip-2").css({"text-align":"left","font-size":".6rem"});
         }
         else {$(".tip-2").html("")}
     })
