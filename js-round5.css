@@ -29,15 +29,14 @@ body {
     left: calc((100vw - 40vw)/2) !important;
     top: calc((100vh - 25vw)/2) !important;
   }
-  p {
-    height: 6vw!important;
+  .head {
+    height: 5vw!important;
     font-size: 2.5vh!important;
     line-height: 6vw!important;
   }
   input {
     width: calc(75% - 5vw) !important;
     height: 4.5vw!important;
-    margin-bottom: .6vw!important;
   }
   button {
     font-size: 2vh!important;
@@ -49,6 +48,16 @@ body {
     line-height: 2.5vw!important;
     font-size: .6rem!important;
     margin-top: 0!important;
+  }
+  .tip-1 {
+    height: 2.5vw!important;
+    line-height: 2.5vw!important;
+    font-size: .6rem;
+  }
+  .tip-2 {
+    height: 2.5vw!important;
+    line-height: 2.5vw!important;
+    font-size: .6rem;
   }
   .img {
     width: 5vw!important;
@@ -73,9 +82,9 @@ body {
   background: #d2d7df;
   z-index: 200;
 }
-.login p {
+.login .head {
   width: 100%;
-  height: 75px;
+  height: 60px;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
@@ -88,7 +97,6 @@ body {
   width: calc(75% - 4rem);
   text-align: left;
   height: 50px;
-  margin-bottom: 20px;
   border: none;
   outline: none;
 }
@@ -114,6 +122,24 @@ body {
   top: 13px;
   right: 0;
   border: 1px solid gainsboro;
+}
+.login .tip-1 {
+  width: 80%;
+  margin: 0 auto;
+  color: red;
+  height: 40px ;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: left;
+}
+.login .tip-2 {
+  width: 80%;
+  margin: 0 auto;
+  color: red;
+  height: 40px ;
+  line-height: 40px;
+  font-size: 1rem;
+  text-align: left;
 }
 .login .tip {
   margin-top: -10px;
